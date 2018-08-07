@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // layout components
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 // material components
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule, MatIconModule, MatSidenavModule} from '@angular/material';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -42,7 +42,8 @@ const routes: Routes = [
     MatInputModule,
     MatIconModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
