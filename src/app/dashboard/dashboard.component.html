@@ -1,12 +1,16 @@
-<div style="height: 100%;" fxLayout="column">
+<div style="height: 100%; padding: 0.2em" fxLayout="column">
   <mat-toolbar color="primary">
     <span>R-Dashboard</span>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlex>
-    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav mode="side" opened>
+      <!-- side navigation -->
+      <app-side-nav></app-side-nav>
+    </mat-sidenav>
     <mat-sidenav-content>
-      Main content
+      <!-- dashboard content -->
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
